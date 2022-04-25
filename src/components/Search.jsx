@@ -18,8 +18,8 @@ export default function Search() {
               <Ri24HoursFill size={50} />
             </button>
             <div>
-              <h3>Leading service</h3>
-              <p>All-inclusive company for 20 years in a row</p>
+              <h3 className='py-2'>Leading service</h3>
+              <p className='py-1'>All-inclusive company for 20 years in a row</p>
             </div>
           </div>
           <div className='flex flex-col lg:flex-row items-center text-center'>
@@ -27,14 +27,39 @@ export default function Search() {
               <MdOutlineTravelExplore size={50} />
             </button>
             <div>
-              <h3>Leading service</h3>
-              <p>All-inclusive company for 20 years in a row</p>
+              <h3 className='py-2'>Leading service</h3>
+              <p className='py-1'>All-inclusive company for 20 years in a row</p>
             </div>
           </div>
-          <div></div>
         </div>
       </div>
-      <div>right</div>
+      <div>
+        <div className='border text-center '>
+          <p className='pt-2'>Get an additional 10% off</p>
+          <p className='py-4'>12 hours left</p>
+          <p className='bg-gray-800 text-gray-200 py-2'>Book Now and Safe</p>
+        </div>
+        <form className='w-full '>
+          <div className='flex flex-col my-2'>
+            <label>Destination</label>
+            <select className='border rounded-md p-2'>
+              <option>grande antigua</option>
+              <option>key west</option>
+              <option>maldives</option>
+              <option>cozumel</option>
+            </select>
+          </div>
+          <div className='flex flex-col my-2'>
+            <label>Check in</label>
+            <input type="date" className='border rounded-md p-2' />
+          </div>
+          <div className='flex flex-col my-2'>
+            <label>Check out</label>
+            <input type="date" className='border rounded-md p-2' />
+          </div>
+          <button className='w-full'>Rates & Availabilities</button>
+        </form>
+      </div>
     </div>
   )
 }
